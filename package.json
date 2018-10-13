@@ -1,0 +1,15 @@
+{
+  "author": "@kjellski",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.1.0"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cypress-demo",
+  "private": true,
+  "scripts": {
+    "test": "$(npm bin)/cypress open"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+.DS_Store
+.vscode/
+.cache/
+node_modules/
+dist/
+stats.json
+compilation-stats.json
+
+# testing
+test-results/
+cypress/videos/
+cypress/screenshots/
+
