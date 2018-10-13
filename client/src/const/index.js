@@ -1,0 +1,1 @@
+export { default as DataTestIds } from './DataTestIds'
