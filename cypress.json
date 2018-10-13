@@ -1,1 +1,14 @@
-{}
+{
+  "baseUrl": "http://localhost:8080",
+  "env": {
+    "NODE_ENV": "cypress.json-value"
+  },
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "test-results/results.[hash].xml"
+  },
+  "videoCompression": false,
+  "videoUploadOnPasses": false
+}

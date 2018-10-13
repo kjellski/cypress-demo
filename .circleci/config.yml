@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cypress/base:10
+        environment:
+          TERM: xterm
+    working_directory: /cypress-demo
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: |
+            npm ci && \
+            pushd client && \
+            npm ci && \
+            popd
+      - run:
+          name: Build client
+          command: |
+            pushd client && \ 
+            npm run build && \
+            popd
+      - run:
+          name: Run tests
+          command: |
+            npm run host:server & \
+            npm run host:client & \
+            npm run test:ci
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+      - store_test_results:
+          path: test-results

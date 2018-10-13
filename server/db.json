@@ -1,0 +1,34 @@
+{
+  "comments": [
+    {
+      "body": "some comment",
+      "id": 1,
+      "postId": 1
+    },
+    {
+      "body": "good comment",
+      "id": 2,
+      "postId": 1
+    },
+    {
+      "body": "bad comment",
+      "id": 2,
+      "postId": 2
+    }
+  ],
+  "posts": [
+    {
+      "author": "kjellski",
+      "id": 1,
+      "title": "json-server"
+    },
+    {
+      "author": "kjellski",
+      "id": 2,
+      "title": "cypress demo"
+    }
+  ],
+  "profile": {
+    "name": "kjellski"
+  }
+}
