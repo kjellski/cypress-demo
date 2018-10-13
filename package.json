@@ -14,8 +14,8 @@
     "test": "$(npm bin)/cypress open",
     "test:ci": "$(npm bin)/cypress run --record",
     "build:client": "pushd client && npm run build && popd",
-    "host:client": "$(npm bin)/serve -l 8080 -s client/build",
-    "host:server": "$(npm bin)/json-server server/db.json"
+    "host:client": "$(npm bin)/serve -l 3000 -s client/build",
+    "host:server": "$(npm bin)/json-server -p 3001 server/db.json"
   },
   "version": "1.0.0"
 }
