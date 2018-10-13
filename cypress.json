@@ -3,12 +3,13 @@
   "env": {
     "NODE_ENV": "cypress.json-value"
   },
-  "viewportWidth": 1440,
-  "viewportHeight": 900,
+  "projectId": "7pkcik",
   "reporter": "junit",
   "reporterOptions": {
     "mochaFile": "test-results/results.[hash].xml"
   },
   "videoCompression": false,
-  "videoUploadOnPasses": false
+  "videoUploadOnPasses": false,
+  "viewportHeight": 900,
+  "viewportWidth": 1440
 }
